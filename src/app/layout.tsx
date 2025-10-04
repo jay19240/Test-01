@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import Chat from "./chat/chatComponent";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,10 +26,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="navbar">
+          <div className="container">
+            <div className="navbar-inner">
+              <Link href="/articles" className="navbar-item">Articles</Link>
+              <Link href="/articles/new" className="navbar-item">Créer un article</Link>
+            </div>
+          </div>
+        </div>
         {children}
+        <Chat/>
+        <div className="footer">
+          @Copyright 2025 - Julien.R
+        </div>
       </body>
     </html>
   );

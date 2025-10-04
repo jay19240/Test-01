@@ -20,7 +20,220 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cg %3E%3Cpolygon fill='%23F2F2F3' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23F2F2F3' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*
+  CONTAINER
+*/
+.container {
+  display: block;
+  max-width: 920px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+  NAVBAR
+*/
+.navbar {
+  @apply bg-sky-50;
+  @apply border-b border-gray-400;
+  @apply mb-5;
+}
+
+.navbar-inner {
+  @apply flex flex-row justify-between items-center;
+  @apply h-14;
+}
+
+.navbar-item {
+  @apply mr-2;
+  @apply text-zinc-700;
+}
+
+/*
+  MAIN
+*/
+.main {
+  @apply bg-white;
+  @apply border border-gray-400;
+  @apply py-3 px-3;
+  @apply rounded-sm;
+  min-height: 100vh;
+}
+
+.main-title {
+  @apply text-xl;
+  @apply text-center;
+  @apply border-b border-zinc-700;
+  @apply mb-5;
+}
+
+/*
+  FORM SEARCH
+*/
+.formSearch {
+  @apply flex w-full;
+  @apply mb-3;
+}
+
+.formSearch-text {
+  @apply w-full px-4 py-2;
+  @apply rounded-l-2xl border border-gray-300;
+  @apply bg-white text-gray-700 placeholder-gray-400;
+  @apply shadow-sm transition;
+}
+
+.formSearch-sort {
+  @apply px-4 py-2;
+  @apply rounded-r-2xl;
+  @apply border border-gray-300 border-l-0;
+  @apply bg-gray-100 text-gray-600;
+  @apply placeholder-gray-400;
+  @apply shadow-sm transition;
+  @apply cursor-pointer;
+}
+
+.formSearch-submit {
+  @apply px-4 py-2;
+  @apply border border-gray-300 border-l-0;
+  @apply bg-white text-gray-700;
+  @apply placeholder-gray-400;
+  @apply shadow-sm transition;
+  @apply cursor-pointer;
+}
+
+.formSearch-submit:hover {
+  @apply bg-gray-100 text-gray-600;
+}
+
+.formInline-left:focus,
+.formInline-right:focus {
+  @apply border-blue-500;
+  @apply outline-none;
+}
+
+/*
+  ARTICLE CARD
+*/
+.articleCard {
+  @apply p-6 bg-white rounded-2xl shadow-sm hover:shadow-lg transition;
+
+}
+
+.articleCard-title {
+  @apply text-xl font-semibold text-gray-800 mb-2;
+}
+
+.articleCard-description {
+  @apply text-gray-600;
+  @apply truncate;
+}
+
+/*
+  EMPTY
+*/
+.empty {
+  @apply block;
+  @apply text-center;
+}
+
+/*
+  FORM
+*/
+.form {
+  @apply bg-white rounded px-8 pt-6 pb-8 mb-4;
+}
+
+.form-group {
+  @apply mb-4;
+}
+
+.form-group-label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.form-group-input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none;
+}
+
+.form-group-error {
+  @apply text-red-500 text-xs italic;
+}
+
+.form-submit {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded outline-none cursor-pointer;
+}
+
+/*
+  FOOTER
+*/
+.footer {
+  @apply text-center;
+  @apply italic;
+  @apply text-zinc-400;
+  @apply py-5;
+}
+
+/*
+  CHAT_BTN
+*/
+.chatBtn {
+  @apply fixed;
+  right: 10px;
+  bottom: 10px;
+  @apply bg-white;
+  @apply p-3;
+  @apply rounded-full;
+  @apply shadow-xl;
+  @apply cursor-pointer;
+}
+
+/*
+  CHATBOT
+*/
+.chatbot {
+  @apply fixed;
+  @apply hidden;
+  right: 160px;
+  bottom: 10px;
+  @apply bg-white;
+  @apply shadow-lg;
+  width: 300px;
+  max-width: 300px;
+}
+.chatbot--open {
+  @apply block;
+}
+
+.chatbot-dialog {
+  min-height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  @apply border-b border-zinc-700;
+}
+
+.chatbot-dialog-item {
+  @apply mb-3;
+}
+
+.chatbot-message {
+  @apply flex flex-row;
+  min-height: 50px;
+}
+
+.chatbot-message-input {
+  display: block;
+  width: 100%;
+  @apply p-1;
+}
+
+.chatbot-message-send {
+  @apply cursor-pointer;
 }

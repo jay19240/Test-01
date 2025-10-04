@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ebitda",
+    "question": "Qu’est-ce que l’EBITDA ?",
+    "answer": "L’EBITDA (Earnings Before Interest, Taxes, Depreciation and Amortization) représente le résultat opérationnel avant intérêts, impôts et amortissements.",
+    "sources": ["faq#ebitda"]
+  },
+  {
+    "id": "marge-brute",
+    "question": "Qu’est-ce que la marge brute ?",
+    "answer": "La marge brute correspond au chiffre d’affaires diminué du coût des ventes, elle mesure la rentabilité directe des produits ou services.",
+    "sources": ["faq#marge-brute"]
+  },
+  {
+    "id": "flux-tresorerie",
+    "question": "Qu’est-ce que le flux de trésorerie ?",
+    "answer": "Le flux de trésorerie représente les mouvements de liquidités entrants et sortants d’une entreprise sur une période donnée.",
+    "sources": ["faq#flux-tresorerie"]
+  },
+  {
+    "id": "bilan",
+    "question": "Qu’est-ce qu’un bilan comptable ?",
+    "answer": "Le bilan comptable présente l’actif, le passif et les capitaux propres d’une entreprise à un instant donné.",
+    "sources": ["faq#bilan"]
+  },
+  {
+    "id": "compte-resultat",
+    "question": "Qu’est-ce qu’un compte de résultat ?",
+    "answer": "Le compte de résultat récapitule les produits et les charges d’une entreprise sur une période, pour déterminer le bénéfice ou la perte.",
+    "sources": ["faq#compte-resultat"]
+  },
+  {
+    "id": "fonds-de-roulement",
+    "question": "Qu’est-ce que le fonds de roulement ?",
+    "answer": "Le fonds de roulement représente la différence entre les actifs circulants et les passifs circulants, indiquant la capacité de l’entreprise à financer son activité courante.",
+    "sources": ["faq#fonds-de-roulement"]
+  },
+  {
+    "id": "ratio-solvabilite",
+    "question": "Qu’est-ce que le ratio de solvabilité ?",
+    "answer": "Le ratio de solvabilité mesure la capacité d’une entreprise à honorer ses dettes à long terme.",
+    "sources": ["faq#ratio-solvabilite"]
+  }
+]

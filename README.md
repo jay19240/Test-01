@@ -9,7 +9,7 @@ Generate Prisma:
 npx prisma generate
 ```
 
-Second, make a seed:
+Make the seeding:
 ```bash
 npm run seed
 ```

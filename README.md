@@ -4,6 +4,10 @@ First, install all dependencies with:
 ```bash
 npm install
 ```
+Generate Prisma:
+```bash
+npx prisma generate
+```
 
 Second, make a seed:
 ```bash
